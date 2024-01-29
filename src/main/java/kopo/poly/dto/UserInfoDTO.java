@@ -1,11 +1,20 @@
 package kopo.poly.dto;
 
-public record UserInfoDTO(
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
-        String phoneNumber,
-        String password,
-        String addr1,
-        String addr2
+@Builder
+@Getter
+@Setter
+public class UserInfoDTO{
 
-) {
+
+
+    private String phoneNumber;
+    private String password;
+    private String addr1;
+    private String addr2;
+
+
 }
